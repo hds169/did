@@ -1,0 +1,14 @@
+<html>
+<body>
+<form method="POST">
+{%csrf_token%}
+Link Main<input type="radio"  name="link" value="linkimp"checked/>
+Link Normal<input type="radio"  name="link" value="linkmid"/>
+Link Low Priority<input type="radio"  name="link" value="link"/><br>
+
+{{l.as_p}}
+
+<input type='submit' value='Submit' />
+</form>
+</body>
+</html>
